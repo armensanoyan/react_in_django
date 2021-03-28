@@ -38,7 +38,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'dango_for_react.urls'
+ROOT_URLCONF = 'django_for_react.urls'
 
 TEMPLATES = [
     {
@@ -58,7 +58,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'dango_for_react.wsgi.application'
+WSGI_APPLICATION = 'django_for_react.wsgi.application'
 
 
 # Database
