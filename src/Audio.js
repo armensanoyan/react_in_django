@@ -9,6 +9,22 @@ export default class App extends Component {
     this.state = {
       recordState: null
     }
+    this.setRecordingCicle = this.setRecordingCicle.bind(this)
+  }
+
+  componentDidMount() {
+      console.log('did')
+      setInterval(this.setRecordingCicle, 2000)
+  }
+
+  setRecordingCicle() {
+      console.log('setRecordingCicle')
+      this.setState({
+        recordState: RecordState.STOP
+      })
+      this.setState({
+        recordState: RecordState.START
+      })
   }
  
   start = () => {
